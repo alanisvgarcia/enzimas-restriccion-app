@@ -33,7 +33,7 @@ elif enzima == "McrBC":
 
 
 # Usamos radio buttons para el estado
-estado_enz = st.radio("¿Cuál es el estado de metilación del ADN?", ["metilada", "no metilada"])
+estado_enz = st.radio("¿Cuál es el estado de metilación del ADN?", ["metilado", "no metilado"])
 
 # 4. Lógica de ejecución al presionar un botón
 if st.button("Consultar"):
