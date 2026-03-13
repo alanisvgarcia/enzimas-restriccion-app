@@ -41,7 +41,7 @@ if st.button("Consultar"):
     
     # Mostrar el resultado de forma visualmente atractiva
     if "no corta" in resultado:
-        st.error(f"Resultado: Con la enzima **{enzima}** {estado_enz}, el ADN **{resultado}**.")
+        st.error(f"Resultado: Con el ADN **{estado_enz}**, la enzima **{resultado}**.")
     else:
         st.success(f"Resultado: Con la enzima **{enzima}** {estado_enz}, el ADN **{resultado}**.")
 
