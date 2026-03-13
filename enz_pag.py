@@ -9,12 +9,12 @@ st.write("Determina si una enzima cortará el ADN basándose en el estado de met
 # 2. Datos de las enzimas
 reglas_enzimas = {
     "HpaII": {
-        "metilada": "no corta",
-        "no metilada": "corta"
+        "metilado": "no corta",
+        "no metilado": "corta"
     },
     "McrBC": {
-        "metilada": "corta",
-        "no metilada": "no corta"
+        "metilado": "corta",
+        "no metilado": "no corta"
     }
 }
 
@@ -41,7 +41,7 @@ if st.button("Consultar"):
     
     # Mostrar el resultado de forma visualmente atractiva
     if "no corta" in resultado:
-        st.error(f"Resultado: Con el ADN **{estado_enz}**, la enzima **{resultado}**.")
+        st.error(f"Resultado: Con el ADN **{estado_enz}**, la enzima {enzima} **{resultado}**.")
     else:
         st.success(f"Resultado: Con la enzima **{enzima}** {estado_enz}, el ADN **{resultado}**.")
 
