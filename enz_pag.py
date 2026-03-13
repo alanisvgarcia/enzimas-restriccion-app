@@ -43,7 +43,7 @@ if st.button("Consultar"):
     if "no corta" in resultado:
         st.error(f"Resultado: Con el ADN **{estado_enz}**, la enzima {enzima} **{resultado}**.")
     else:
-        st.success(f"Resultado: Con la enzima **{enzima}** {estado_enz}, el ADN **{resultado}**.")
+        st.success(f"Resultado: Con el ADN **{estado_enz}**, la enzima {enzima} **{resultado}**.")
 
 # Pie de página informativo
 st.info("Nota: HpaII es sensible a la metilación, mientras que McrBC requiere metilación para cortar.")
